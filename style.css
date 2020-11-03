@@ -13,7 +13,7 @@ body {
     text-align: center;
 }
 
-.connect, .sustainability, .emergency{
+.connect, .sustainability, .emergency {
     font-size: 20px;
     padding: 5px;
     height: 200px;
@@ -62,4 +62,11 @@ body {
 .footer-button:hover {
     cursor: pointer;
     background-color:  rgb(102 146 68);
+}
+
+#footer {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
 }
