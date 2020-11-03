@@ -228,6 +228,7 @@ img {
     .sustainabilty-container{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     align-content: center;
     height: 250px;
     width: 250px;
