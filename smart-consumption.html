@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lobster">
+    <script src="https://kit.fontawesome.com/14a6d0f73b.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    jQuery(function(){
+        console.log("Inside the main function");
+
+var minimized_elements = $('p.minimize');
+console.log("The minized text is ",minimized_elements);
+var minimize_character_count = 50;    
+
+minimized_elements.each(function(){ 
+    console.log("Inside the minimize function");   
+    var t = $(this).text();        
+    if(t.length < minimize_character_count ) return;
+
+    $(this).html(
+        t.slice(0,minimize_character_count )+'<span>... </span><a href="#" class="more">More</a>'+
+        '<span style="display:none;">'+ t.slice(minimize_character_count ,t.length)+' <a href="#" class="less">Less</a></span>'
+    );
+
+}); 
+
+$('a.more', minimized_elements).click(function(event){
+    event.preventDefault();
+    $(this).hide().prev().hide();
+    $(this).next().show();        
+});
+
+$('a.less', minimized_elements).click(function(event){
+    event.preventDefault();
+    $(this).parent().hide().prev().show().prev().show();    
+});
+
+})
+        
+</script>
+</head>
+<body>
+	<div class="container-box">
+        <div class="logo-header">
+            <h1>Smart Consumption</h1>
+            <p class="information-header">In Smart Consumption we encourage you to lend and share your things with each other</p>
+        </div>
+		<div class="container-items">
+            <div class="image-container">
+            <img src="images/sherlock.jpg" alt="Book">
+            <p class="minimize">I am willing to share my favourite book of Sherlock Holmes with you for a month.
+                If anyone wants to borrow, feel free to press the Borrow button.
+               </p>
+            </div>
+            <div class="product-text"><b>Are you interested to borrow?</b>
+                <span><div class="interest-button">Yes</div></span>
+            </div>
+        </div>
+        
+        <div class="container-items">
+            <div class="image-container">
+            <img src="images/tools.jpg" alt="Tools">
+            <p class="minimize">I am willing to share my set of toolbox with you for a month.
+                If anyone wants to borrow, feel free to press the Borrow button.
+               </p>
+            </div>
+            <div class="product-text"><b>Are you interested to borrow?</b>
+                <span><div class="interest-button">Yes</div></span>
+            </div>
+        </div>
+
+        <div class="container-items">
+            <div class="image-container">
+            <img src="images/lawn_mower.jpg" alt="Lawn mower">
+            <p class="minimize">I am willing to share my little lawn mower robot with you for a couple of weeks.
+                If anyone wants to borrow, feel free to press the Borrow button.
+               </p>
+            </div>
+            <div class="product-text"><b>Are you interested to borrow?</b>
+                <span><div class="interest-button">Yes</div></span>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="footer-container">
+            <a class="footer-button" href="getconnected.html"><div><div class="button-icon"><i class="fas fa-user-friends"></i></div><p>Get Connected</p></div></a>
+            <a class="footer-button" href="sustainability.html"><div class="footer-button"><div class="button-icon"><i class="fas fa-leaf"></i></div><p>Sustainability</p></div></a>
+            <a class="footer-button" href="emergency.html"><div class="footer-button"><div class="button-icon"><i class="fas fa-shield-alt"></i></div><p>Security</p></div></a>
+        </div>
+    </footer>
+</body>
+</html>
