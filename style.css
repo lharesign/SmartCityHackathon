@@ -1,9 +1,9 @@
-
 * {
     box-sizing : border-box;
     margin: 0px;
     padding: 0px;
 }
+
 body {
     background-color: rgb(39, 39, 39);
     font-family: "Gill Sans", sans-serif;
@@ -109,27 +109,30 @@ h1 {
     width: 100%;
 }
 /* StartPage */
-img {    
+.image-logo {   
+    width: 400px; 
+    height: 150px;
     padding-top: 2%;
     display: block;
     margin: auto;
 }
 
 .connect, .sustainability, .emergency{
-    font-size: 20px;
-    height: 200px;
-    width: 200px;
+    font-size: 12px;
+    height: 125px;
+    width: 125px;
     color: white;
     border: none;
     border-radius: 50%;
     cursor: pointer;
     display: block;
+    outline: none;
 }
 
 .connect {
     background: rgb(0,0,249);
     background: radial-gradient(circle, rgba(0,0,249,1) 21%, rgba(2,0,36,1) 100%);
-    margin-left: 33%;
+    margin-left: 38%;
     margin-top: 2%
 }
 
@@ -142,11 +145,11 @@ img {
 .emergency{
     background: rgb(246,22,22);
     background: radial-gradient(circle, rgba(246,22,22,1) 0%, rgba(34,8,8,1) 100%);
-    margin-left: 33%;
+    margin-left: 38%;
 }
 /* Connect page style */
 
-.events, .meetyourneighour, .localsnews, .helpeachothers{
+.events, .localsnews, .helpeachothers{
     background: rgb(0,0,249);
     background: radial-gradient(circle, rgba(0,0,249,1) 21%, rgba(2,0,36,1) 100%);
     border-radius: 25px;
@@ -157,8 +160,7 @@ img {
     color: white;
     border-style: none;
     outline-style: none;
-    padding-top: 15px;
-    margin-right: 5px;
+    margin: 20px;
     }
     
     .connect-wrapper{
@@ -167,11 +169,12 @@ img {
     }
     
     .connect-container {  
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    height: 250px;
-    width: 250px;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        height: 300px;
+        width: 300px;
     }
     
     .events{
@@ -186,10 +189,7 @@ img {
         padding-top: 23px;
     }
     
-    .events, .meetyourneighour, .localsnews, .helpeachothers{
-        width: 45%;
-        
-    }
+   
     
     
      .parstyle{
@@ -212,9 +212,10 @@ img {
     color: white;
     border-style: none;
     outline-style: none;
-    padding-top: 15px;
-    margin-right: 5px;
+    margin: 20px;
     }
+
+   
     
      .sustainabilty-wrapper{
     display:flex;
@@ -226,8 +227,8 @@ img {
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    height: 250px;
-    width: 250px;
+    height: 300px;
+    width: 300px;
     }
     
     
@@ -236,7 +237,7 @@ img {
     }
         
     
-    .carpool, .reuse {
+    .carpool, .reuse{
         padding-top: 23px;
     }
     
@@ -245,7 +246,7 @@ img {
     
     /* Security page style */
     
-    .neigbourhoodwatch, .incidents{
+    .neigbourhoodwatch, .incidents, .weather-alerts{
     background: rgb(246,22,22);
     background: radial-gradient(circle, rgba(246,22,22,1) 0%, rgba(34,8,8,1) 100%);
     border-radius: 25px;
@@ -256,10 +257,7 @@ img {
     color: white;
     border-style: none;
     outline-style: none;
-    padding-top: 15px;
-    margin-right: 5px;
-        
-    
+    margin: 20px;
     }
     
     .security-wrapper{
@@ -272,15 +270,27 @@ img {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-    height: 250px;
-    width: 250px;
+    height: 300px;
+    width: 300px;
+    justify-content: center;
     }
     
     
     .incidents {
         padding-top: 25px;
     }
+
+    .weather-alerts {
+        padding-top: 25px;
+    }
     
+    .smart-consumption {
+        padding-top: 15px;
+    }
+
+    .neigbourhoodwatch {
+        padding-top: 15px;
+    }
 
 @media screen and (max-width: 400px) {
     .connect,
