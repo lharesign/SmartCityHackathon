@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    jQuery(function(){
+        console.log("Inside the main function");
+
+var minimized_elements = $('p.minimize');
+console.log("The minized text is ",minimized_elements);
+var minimize_character_count = 50;    
+
+minimized_elements.each(function(){ 
+    console.log("Inside the minimize function");   
+    var t = $(this).text();        
+    if(t.length < minimize_character_count ) return;
+
+    $(this).html(
+        t.slice(0,minimize_character_count )+'<span>... </span><a href="#" class="more">More</a>'+
+        '<span style="display:none;">'+ t.slice(minimize_character_count ,t.length)+' <a href="#" class="less">Less</a></span>'
+    );
+
+}); 
+
+$('a.more', minimized_elements).click(function(event){
+    event.preventDefault();
+    $(this).hide().prev().hide();
+    $(this).next().show();        
+});
+
+$('a.less', minimized_elements).click(function(event){
+    event.preventDefault();
+    $(this).parent().hide().prev().show().prev().show();    
+});
+
+})
+        
+</script>
+</head>
+<body>
+	<div class="container-box">
+		<div class="container-items">
+            <div class="image-container">
+            <img src="lamp.jpg" alt="lamp">
+            <p class="minimize">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dot eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.
+               Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+               Excepteur sint occaecat cupidatat non proident, sunt inre culpa qui
+               officia deserunt mollit anim id est laborum.
+               </p>
+            </div>
+            <div class="product-text"><b>Are you interested?</b>
+                <span><div class="interest-button">Yes</div></span>
+            </div>
+        </div>
+        
+        <div class="container-items">
+            <div class="image-container">
+            <img src="chair.jpg" alt="chair">
+            <p class="minimize">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dot eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.
+               Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+               Excepteur sint occaecat cupidatat non proident, sunt inre culpa qui
+               officia deserunt mollit anim id est laborum.
+               </p>
+            </div>
+            <div class="product-text"><b>Are you interested?</b>
+                <span><div class="interest-button">Yes</div></span>
+            </div>
+        </div>
+
+        <div class="container-items">
+            <div class="image-container">
+            <img src="tv.jpg" alt="TV">
+            <p class="minimize">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dot eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.
+               Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+               Excepteur sint occaecat cupidatat non proident, sunt inre culpa qui
+               officia deserunt mollit anim id est laborum.
+               </p>
+            </div>
+            <div class="product-text"><b>Are you interested?</b>
+                <span><div class="interest-button">Yes</div></span>
+            </div>
+        </div>
+
+	</div>
+</body>
+</html>
