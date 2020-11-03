@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: rgb(39, 39, 39);
     font-family: "Gill Sans", sans-serif;
 }
 
@@ -26,15 +26,22 @@ body {
 }
 
 .connect {
-    background-color: blue;
+    background: rgb(0,0,249);
+    background: radial-gradient(circle, rgba(0,0,249,1) 21%, rgba(2,0,36,1) 100%);
+    margin-left: 33%;
+    margin-top: 2%
 }
 
 .sustainability{
-    background-color: green;
+    background: rgb(29,189,39);
+    background: radial-gradient(circle, rgba(29,189,39,1) 0%, rgba(8,34,11,1) 100%);
+    margin-left: 50%;
 }
 
 .emergency{
-    background-color: red;
+    background: rgb(246,22,22);
+    background: radial-gradient(circle, rgba(246,22,22,1) 0%, rgba(34,8,8,1) 100%);
+    margin-left: 33%;
 }
 
 .footer-container {
@@ -63,3 +70,142 @@ body {
     cursor: pointer;
     background-color:  rgb(102 146 68);
 }
+
+
+/* Connect page style */
+
+.events, .meetyourneighour, .localsnews, .helpeachothers{
+background: rgb(0,0,249);
+background: radial-gradient(circle, rgba(0,0,249,1) 21%, rgba(2,0,36,1) 100%);
+border-radius: 25px;
+height: 100px;
+width: 100px;
+margin-top: 5px;
+font-size: 13px;
+color: white;
+border-style: none;
+outline-style: none;
+padding-top: 15px;
+margin-right: 5px;
+}
+
+.connect-wrapper{
+display:flex;
+justify-content: center;
+}
+
+.connect-container {  
+display: flex;
+flex-wrap: wrap;
+align-content: center;
+height: 250px;
+width: 250px;
+}
+
+.events{
+    padding-top: 25px;
+}
+
+.localsnews{
+    padding-top: 23px;
+}
+
+.helpeachothers{
+    padding-top: 23px;
+}
+
+.events, .meetyourneighour, .localsnews, .helpeachothers{
+    width: 45%;
+    
+}
+
+
+ .parstyle{
+     text-align: center;
+ }
+
+
+ /* Sustainability page style */
+
+
+
+ .carpool, .reuse, .smart-consumption{
+background: rgb(29,189,39);
+background: radial-gradient(circle, rgba(29,189,39,1) 0%, rgba(8,34,11,1) 100%);
+border-radius: 25px;
+height: 100px;
+width: 100px;
+margin-top: 5px;
+font-size: 13px;
+color: white;
+border-style: none;
+outline-style: none;
+padding-top: 15px;
+margin-right: 5px;
+}
+
+ .sustainabilty-wrapper{
+display:flex;
+justify-content: center;
+}
+
+.sustainabilty-container{
+display: flex;
+flex-wrap: wrap;
+align-content: center;
+height: 250px;
+width: 250px;
+}
+
+
+.smart-consumption{
+    align-self: flex-start;
+}
+    
+
+.carpool, .reuse {
+    padding-top: 23px;
+}
+
+
+
+
+/* Security page style */
+
+.neigbourhoodwatch, .incidents{
+background: rgb(246,22,22);
+background: radial-gradient(circle, rgba(246,22,22,1) 0%, rgba(34,8,8,1) 100%);
+border-radius: 25px;
+height: 100px;
+width: 100px;
+margin-top: 5px;
+font-size: 13px;
+color: white;
+border-style: none;
+outline-style: none;
+padding-top: 15px;
+margin-right: 5px;
+    
+
+}
+
+.security-wrapper{
+    display:flex;
+    justify-content: center;
+}
+
+
+.security-container{
+display: flex;
+flex-wrap: wrap;
+align-content: center;
+height: 250px;
+width: 250px;
+}
+
+
+.incidents {
+    padding-top: 25px;
+}
+
+
