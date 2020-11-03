@@ -1,0 +1,38 @@
+
+* {
+    box-sizing : border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: "Gill Sans", sans-serif;
+    width: 100%;
+}
+
+
+#bankid-img {    
+    padding-top: 5%;
+    display: block;
+    margin: auto;
+    margin-bottom: 4%;
+    max-width: 100%;
+}
+
+#qr-code-img{
+    max-width: 50px;
+    display: block;
+    margin: auto;
+}
+
+#qr-code {
+color: rgb(0, 110, 129);
+}
+.bank-id {
+    text-align: center;
+
+}
+
+.bank-id-p {
+    text-align: center;
+    margin-bottom: 5%;
+}
