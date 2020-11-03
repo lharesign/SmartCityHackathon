@@ -110,28 +110,30 @@ h1 {
 }
 
 /* StartPage */
-
-img {
+.image-logo {   
+    width: 400px; 
+    height: 150px;
     padding-top: 2%;
     display: block;
     margin: auto;
 }
 
-.connect, .sustainability, .emergency {
-    font-size: 20px;
-    height: 200px;
-    width: 200px;
+.connect, .sustainability, .emergency{
+    font-size: 12px;
+    height: 125px;
+    width: 125px;
     color: white;
     border: none;
     border-radius: 50%;
     cursor: pointer;
     display: block;
+    outline: none;
 }
 
 .connect {
-    background: rgb(0, 0, 249);
-    background: radial-gradient(circle, rgba(0, 0, 249, 1) 21%, rgba(2, 0, 36, 1) 100%);
-    margin-left: 33%;
+    background: rgb(0,0,249);
+    background: radial-gradient(circle, rgba(0,0,249,1) 21%, rgba(2,0,36,1) 100%);
+    margin-left: 38%;
     margin-top: 2%
 }
 
@@ -141,10 +143,10 @@ img {
     margin-left: 50%;
 }
 
-.emergency {
-    background: rgb(246, 22, 22);
-    background: radial-gradient(circle, rgba(246, 22, 22, 1) 0%, rgba(34, 8, 8, 1) 100%);
-    margin-left: 33%;
+.emergency{
+    background: rgb(246,22,22);
+    background: radial-gradient(circle, rgba(246,22,22,1) 0%, rgba(34,8,8,1) 100%);
+    margin-left: 38%;
 }
 /* Connect page style */
 
@@ -159,8 +161,7 @@ img {
     color: white;
     border-style: none;
     outline-style: none;
-    padding-top: 15px;
-    margin-right: 5px;
+    margin: 20px;
     }
     
     .connect-wrapper{
@@ -169,11 +170,12 @@ img {
     }
     
     .connect-container {  
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    height: 250px;
-    width: 250px;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        height: 300px;
+        width: 300px;
     }
     
     .events{
@@ -188,10 +190,7 @@ img {
         padding-top: 23px;
     }
     
-    .events, .meetyourneighour, .localsnews, .helpeachothers{
-        width: 45%;
-        
-    }
+   
     
     
      .parstyle{
@@ -214,10 +213,10 @@ img {
     color: white;
     border-style: none;
     outline-style: none;
-    padding-top: 20px;
-    margin-right: 30px;
-    margin-bottom: 30px;
+    margin: 20px;
     }
+
+   
     
      .sustainabilty-wrapper{
     display:flex;
@@ -240,7 +239,7 @@ img {
     }
         
     
-    .carpool, .reuse {
+    .carpool, .reuse{
         padding-top: 23px;
     }
     
@@ -249,7 +248,7 @@ img {
     
     /* Security page style */
     
-    .neigbourhoodwatch, .incidents{
+    .neigbourhoodwatch, .incidents, .weather-alerts{
     background: rgb(246,22,22);
     background: radial-gradient(circle, rgba(246,22,22,1) 0%, rgba(34,8,8,1) 100%);
     border-radius: 25px;
@@ -260,10 +259,7 @@ img {
     color: white;
     border-style: none;
     outline-style: none;
-    padding-top: 15px;
-    margin-right: 5px;
-        
-    
+    margin: 20px;
     }
     
     .security-wrapper{
@@ -276,8 +272,8 @@ img {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-    height: 350px;
-    width: 350px;
+    height: 300px;
+    width: 300px;
     justify-content: center;
     }
     
@@ -285,7 +281,18 @@ img {
     .incidents {
         padding-top: 25px;
     }
+
+    .weather-alerts {
+        padding-top: 25px;
+    }
     
+    .smart-consumption {
+        padding-top: 15px;
+    }
+
+    .neigbourhoodwatch {
+        padding-top: 15px;
+    }
 
 @media screen and (max-width: 400px) {
     .connect, .emergency {
@@ -432,7 +439,7 @@ img {
 
 .news-header {
     background-color: rgb(190, 40, 25);
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     color: white;
     text-align: left;
     padding: 7px;
@@ -448,4 +455,117 @@ img {
 
 .info-style {
     text-align: center;
+}
+
+.menu-container {
+    max-width: 480px;
+    margin: auto;
+    background-color: #555;
+    height: 600px;
+    color: white;
+    border-radius: 10px;
+}
+
+.list-connections {
+    border: 1px solid #ddd;
+    flex-wrap: wrap;
+    padding: 5px;
+    margin: 5px;
+    position: relative;
+    width: 95%;
+    height: auto;
+    display: flex;
+}
+.connections {
+    border: 1px solid #ddd;
+    flex-wrap: wrap;
+    padding: 5px;
+    margin: 5px;
+    position: relative;
+    width: 95%;
+    height: 160px;
+    display: flex;
+}
+.img-container {
+    position: absolute;
+    display: inline-block;
+    top: 25%;
+    width: 30%;
+    height: 50%;
+}
+.txt-container {
+    flex-wrap: wrap;
+    font-size: smaller;
+    position: absolute;
+    display: inline-block;
+    width: 75%;
+    height: 95%;
+    left: 90px;
+    overflow: auto;
+    padding: 5px;
+}
+.msg-container {
+    position: absolute;
+    display: inline;
+    right: 5%;
+    top: 5%;
+    width: 40px;
+    height: 30px;
+    text-align: center;
+}
+a:visited {
+    color: black;
+}
+.reduced-height {
+    height: 50px;
+    border: none;
+}
+#input-items {
+    display: none;
+    background-color: #555;
+}
+.opt-container {
+    position: absolute;
+    display: inline-block;
+    font-size: small;
+    top: 10%;
+    width: 30%;
+    height: 80%;
+    align-content: center;
+}
+.interested {
+    font-size: medium;
+    color: darkblue;
+    text-shadow: 1px 1px darkblue;
+}
+.add-padding{
+    padding: 20px;
+}
+#desc {
+    width: 250px;
+    overflow: auto;
+    border-radius: 10px;    
+}
+#head {
+    width: 250px;
+    border-radius: 6px;
+}
+.btn {
+    margin-left: 20px;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    width: 50px;
+    border-radius: 10px;
+    height: 20px;
+}
+
+.text-div {
+    position:relative;
+}
+
+.spanspan {
+    position:absolute;
+    bottom: 60px;
+    right: 55px;
 }

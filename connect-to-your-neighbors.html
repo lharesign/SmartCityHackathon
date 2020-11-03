@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Connect to your neighbours</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="menu-container">
+            <div class="list-connections">
+                <div class="connections">
+                    <div class="img-container">
+                        <img src="images/fika.jpg" width="80px" height="80px" alt="Join for coffee">
+                    </div>
+                    <div class="txt-container">
+                        <h3>Meet for Coffee</h3>
+                        <span class="msg-container"><a href="" target="_blank"><i class="fa fa-2x fa-envelope-square"></i></a></span>
+                        <p class="text-connections">Hi, anyone interested to meet for a chat and have coffee together this evening?</p>
+                        <p class="text-connections">Join me at my home: <span>33 Cark Krooks Gata</span>
+                        <span>at 5.00 pm, Wednesday 04-11-20 </span></p>
+                        <input type="checkbox" id="interest" name="interest" value="connect">
+                        <label for="interest" class="interested">Interested?</label>
+                    </div>
+                </div>
+                <div class="connections">
+                    <div class="img-container">
+                        <img src="images/walk.jpg" width="80px" height="80px" alt="Join for coffee">
+                    </div>
+                    <div class="txt-container">
+                        <h3>Join for a walk</h3>
+                        <span class="msg-container"><a href="" target="_blank"><i class="fa fa-2x fa-envelope-square"></i></a></span>
+                        <p class="text-connections">Hi, anyone interested in going for a walk?</p>
+                        <p class="text-connections">We will start near ICA
+                        <span>at 4.00 pm, Wednesday 04-11-20 </span></p>
+                        <input type="checkbox" id="interest1" name="interest" value="connect">
+                        <label for="interest" class="interested">Interested?</label>
+                    </div>
+                </div>
+            </div>
+            <div id="plus" class="connections reduced-height">
+                <button class="msg-container" onclick="addInputContainer()"><i class="fa fa-2x fa-plus"></i></button>
+            </div>
+            <div id="input-items" class="connections">
+                <div class="opt-container">
+                    <p>Visibility</p>
+                    <input type="checkbox" id="visibility" name="visibility" value="visibility">
+                    <label for="visibility">Stairs</label><br>
+                    <input type="checkbox" id="visibility" name="visibility" value="visibility">
+                    <label for="visibility">Building</label><br>
+                    <input type="checkbox" id="visibility" name="visibility" value="visibility">
+                    <label for="visibility">Locality</label><br>
+                </div>
+                <div class="txt-container add-padding">
+                    <label for="event">Event</label><br>
+                    <input type="text" id="head" name="head"><br><br>
+                    <label for="desc">Description</label><br>
+                    
+                    <div class="textdiv">
+                    <textarea id="desc" name="description" rows="3"></textarea>
+                    <span class="spanspan"><button class="btn">Post</button></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js" defer></script>
+    </body>
+</html>
