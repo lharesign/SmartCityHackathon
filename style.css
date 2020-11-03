@@ -446,3 +446,116 @@ img {
 .info-style {
     text-align: center;
 }
+
+.menu-container {
+    max-width: 480px;
+    margin: auto;
+    background-color: #555;
+    height: 600px;
+    color: white;
+    border-radius: 10px;
+}
+
+.list-connections {
+    border: 1px solid #ddd;
+    flex-wrap: wrap;
+    padding: 5px;
+    margin: 5px;
+    position: relative;
+    width: 95%;
+    height: auto;
+    display: flex;
+}
+.connections {
+    border: 1px solid #ddd;
+    flex-wrap: wrap;
+    padding: 5px;
+    margin: 5px;
+    position: relative;
+    width: 95%;
+    height: 160px;
+    display: flex;
+}
+.img-container {
+    position: absolute;
+    display: inline-block;
+    top: 25%;
+    width: 30%;
+    height: 50%;
+}
+.txt-container {
+    flex-wrap: wrap;
+    font-size: smaller;
+    position: absolute;
+    display: inline-block;
+    width: 75%;
+    height: 95%;
+    left: 90px;
+    overflow: auto;
+    padding: 5px;
+}
+.msg-container {
+    position: absolute;
+    display: inline;
+    right: 5%;
+    top: 5%;
+    width: 40px;
+    height: 30px;
+    text-align: center;
+}
+a:visited {
+    color: black;
+}
+.reduced-height {
+    height: 50px;
+    border: none;
+}
+#input-items {
+    display: none;
+    background-color: #555;
+}
+.opt-container {
+    position: absolute;
+    display: inline-block;
+    font-size: small;
+    top: 10%;
+    width: 30%;
+    height: 80%;
+    align-content: center;
+}
+.interested {
+    font-size: medium;
+    color: darkblue;
+    text-shadow: 1px 1px darkblue;
+}
+.add-padding{
+    padding: 20px;
+}
+#desc {
+    width: 250px;
+    overflow: auto;
+    border-radius: 10px;    
+}
+#head {
+    width: 250px;
+    border-radius: 6px;
+}
+.btn {
+    margin-left: 20px;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    width: 50px;
+    border-radius: 10px;
+    height: 20px;
+}
+
+.text-div {
+    position:relative;
+}
+
+.spanspan {
+    position:absolute;
+    bottom: 60px;
+    right: 55px;
+}
