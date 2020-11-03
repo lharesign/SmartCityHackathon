@@ -168,3 +168,35 @@ img {
         margin-left:15%;
     }
 }
+
+
+.news-content {
+    color: black;;
+    background-color: white;
+}
+
+.news-header {
+    /*background-color: rgb(255, 15, 15);*/
+    background-color: #be2819;
+    margin-bottom: 20px;
+}
+
+.news-container {
+    width: 50%;
+    height: auto;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-top: 20px;
+}
+
+.news-paragraph {
+    padding-bottom: 20px;
+}
+   
+
+
+
+
+
+
