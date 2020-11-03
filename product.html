@@ -3,6 +3,8 @@
 <head>
 	<title>My Website</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lobster">
+    <script src="https://kit.fontawesome.com/14a6d0f73b.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
     jQuery(function(){
@@ -41,6 +43,10 @@ $('a.less', minimized_elements).click(function(event){
 </head>
 <body>
 	<div class="container-box">
+        <div class="logo-header">
+            <h1>Reuse</h1>
+            <p class="information-header">In reuse we encourage you to offer your unwanted items to your neighbours</p>
+        </div>
 		<div class="container-items">
             <div class="image-container">
             <img src="images/lamp.jpg" alt="lamp">
@@ -88,7 +94,13 @@ $('a.less', minimized_elements).click(function(event){
                 <span><div class="interest-button">Yes</div></span>
             </div>
         </div>
-
-	</div>
+    </div>
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-button"><div class="button-icon"><i class="fas fa-user-friends"></i></div><p>Get Connected</p></div>
+            <div class="footer-button"><div class="button-icon"><i class="fas fa-leaf"></i></div><p>Sustainability</p></div>
+            <div class="footer-button"><div class="button-icon"><i class="fas fa-shield-alt"></i></div><p>Security</p></div>
+        </div>
+    </footer>
 </body>
 </html>

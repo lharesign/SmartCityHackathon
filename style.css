@@ -5,36 +5,8 @@
     padding: 0px;
 }
 body {
-    background-color: black;
+    background-color: rgb(39, 39, 39);
     font-family: "Gill Sans", sans-serif;
-}
-
-.buttons {
-    text-align: center;
-}
-
-.connect, .sustainability, .emergency{
-    font-size: 20px;
-    padding: 5px;
-    height: 200px;
-    width: 200px;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    margin-top: 50px;
-    margin-left: 50x;
-}
-
-.connect {
-    background-color: blue;
-}
-
-.sustainability{
-    background-color: green;
-}
-
-.emergency{
-    background-color: red;
 }
 
 .container-box {
@@ -42,7 +14,6 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-top: 100px;
 }
 
 .container-items img {
@@ -73,6 +44,29 @@ body {
     display: inline-block;
 }
 
+.logo-header {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+h1 {
+    font-family: lobster;
+    color: rgb(116,209,76);
+    font-size: 50px;
+    text-align: center;
+}
+
+.information-header {
+    margin-top: 20px;
+    color: rgb(116,209,76);
+    font-size: 20px;
+}
+
+.minimize {
+    margin-top: 5%;
+    line-height: 1.4;
+}
+
 .product-text {
     padding: 5px 20px;
     /*text-align: center;*/
@@ -85,17 +79,6 @@ body {
     border: 1px solid black;
     width: 440px;
     height: auto;
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    background-color: rgb(39, 39, 39);
-    font-family: "Gill Sans", sans-serif;
 }
 
 .footer-container {
