@@ -40,6 +40,7 @@ body {
 }
 
 .logo-header {
+    padding-top: 50px;
     padding-bottom: 50px;
 }
 
@@ -124,7 +125,7 @@ h1 {
 }
 
 .connect, .sustainability, .emergency{
-    font-size: 12px;
+    font-size: 15px;
     height: 125px;
     width: 125px;
     color: white;
@@ -133,6 +134,10 @@ h1 {
     cursor: pointer;
     display: block;
     outline: none;
+}
+
+.buttons a {
+    text-decoration: none;
 }
 
 .connect {
