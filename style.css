@@ -148,7 +148,7 @@ img {
 }
 /* Connect page style */
 
-.events, .meetyourneighour, .localsnews, .helpeachothers{
+.events, .localsnews, .helpeachothers{
     background: rgb(0,0,249);
     background: radial-gradient(circle, rgba(0,0,249,1) 21%, rgba(2,0,36,1) 100%);
     border-radius: 25px;
@@ -222,6 +222,7 @@ img {
      .sustainabilty-wrapper{
     display:flex;
     justify-content: center;
+    margin: auto;
     }
     
     .sustainabilty-container{
@@ -275,8 +276,9 @@ img {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-    height: 250px;
-    width: 250px;
+    height: 350px;
+    width: 350px;
+    justify-content: center;
     }
     
     
