@@ -40,7 +40,6 @@ body {
 }
 
 .logo-header {
-    padding-top: 50px;
     padding-bottom: 50px;
 }
 
@@ -55,6 +54,7 @@ h1 {
     margin-top: 20px;
     color: rgb(116,209,76);
     font-size: 20px;
+    text-align: center;
 }
 
 .minimize {
@@ -76,6 +76,7 @@ h1 {
 }
 
 .footer-container {
+    max-height: 72px;
     display: flex;
     background-color: rgb(132, 188, 65);
 }
@@ -107,6 +108,10 @@ h1 {
     bottom: 0px;
     left: 0px;
     width: 100%;
+}
+
+#footer a {
+    text-decoration: none;
 }
 
 /* StartPage */
@@ -371,6 +376,7 @@ img {
     transition: margin-left .5s;
     /* If you want a transition effect */
     padding: 8px;
+    width: 100%;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */

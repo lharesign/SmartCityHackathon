@@ -3,7 +3,6 @@ function navEvent() {
     if ($("#mySidebar").hasClass("closed")) {
         
         $("#mySidebar").css("width", "250px");
-        $("#navbar").css("marginLeft", "250px");
         $("#mySidebar").removeClass("closed");
         $("#mySidebar").addClass("open");
         $(".openbtn").css("visibility", "hidden");
@@ -11,7 +10,6 @@ function navEvent() {
     } else if ($("#mySidebar").hasClass("open")) {
         
         $("#mySidebar").css("width", "0px");
-        $("#navbar").css("marginLeft", "0px");
         $("#mySidebar").removeClass("open");
         $("#mySidebar").addClass("closed");
         $(".openbtn").css("visibility", "visible");
