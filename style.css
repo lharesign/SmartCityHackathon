@@ -1,47 +1,78 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 
+* {
+    box-sizing : border-box;
+    margin: 0px;
+    padding: 0px;
+}
 body {
     background-color: rgb(39, 39, 39);
     font-family: "Gill Sans", sans-serif;
 }
 
-.buttons {
+.container-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-items img {
+    width:400px;
+    height:300px;
+}
+
+.container-items {
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    margin-bottom: 100px;
+}
+
+.interest-button {
+    padding: 10px;
+    text-align: center;
+    cursor:pointer;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.logo-header {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+h1 {
+    font-family: lobster;
+    color: rgb(116,209,76);
+    font-size: 50px;
     text-align: center;
 }
 
-.connect, .sustainability, .emergency{
+.information-header {
+    margin-top: 20px;
+    color: rgb(116,209,76);
     font-size: 20px;
-    padding: 5px;
-    height: 200px;
-    width: 200px;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    margin-top: 50px;
-    margin-left: 50x;
 }
 
-.connect {
-    background: rgb(0,0,249);
-    background: radial-gradient(circle, rgba(0,0,249,1) 21%, rgba(2,0,36,1) 100%);
-    margin-left: 33%;
-    margin-top: 2%
+.minimize {
+    margin-top: 5%;
+    line-height: 1.4;
 }
 
-.sustainability{
-    background: rgb(29,189,39);
-    background: radial-gradient(circle, rgba(29,189,39,1) 0%, rgba(8,34,11,1) 100%);
-    margin-left: 50%;
+.product-text {
+    padding: 5px 20px;
+    border: 1px solid black;
+    border-top: 0;
 }
 
-.emergency{
-    background: rgb(246,22,22);
-    background: radial-gradient(circle, rgba(246,22,22,1) 0%, rgba(34,8,8,1) 100%);
-    margin-left: 33%;
+.image-container{
+    padding: 20px;
+    border: 1px solid black;
+    width: 440px;
+    height: auto;
 }
 
 .footer-container {
@@ -71,141 +102,188 @@ body {
     background-color:  rgb(102 146 68);
 }
 
+#footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+}
+/* StartPage */
+img {    
+    padding-top: 2%;
+    display: block;
+    margin: auto;
+}
 
+.connect, .sustainability, .emergency{
+    font-size: 20px;
+    height: 200px;
+    width: 200px;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: block;
+}
+
+.connect {
+    background: rgb(0,0,249);
+    background: radial-gradient(circle, rgba(0,0,249,1) 21%, rgba(2,0,36,1) 100%);
+    margin-left: 33%;
+    margin-top: 2%
+}
+
+.sustainability{
+    background: rgb(29,189,39);
+    background: radial-gradient(circle, rgba(29,189,39,1) 0%, rgba(8,34,11,1) 100%);
+    margin-left: 50%;
+}
+
+.emergency{
+    background: rgb(246,22,22);
+    background: radial-gradient(circle, rgba(246,22,22,1) 0%, rgba(34,8,8,1) 100%);
+    margin-left: 33%;
+}
 /* Connect page style */
 
 .events, .meetyourneighour, .localsnews, .helpeachothers{
-background: rgb(0,0,249);
-background: radial-gradient(circle, rgba(0,0,249,1) 21%, rgba(2,0,36,1) 100%);
-border-radius: 25px;
-height: 100px;
-width: 100px;
-margin-top: 5px;
-font-size: 13px;
-color: white;
-border-style: none;
-outline-style: none;
-padding-top: 15px;
-margin-right: 5px;
-}
-
-.connect-wrapper{
-display:flex;
-justify-content: center;
-}
-
-.connect-container {  
-display: flex;
-flex-wrap: wrap;
-align-content: center;
-height: 250px;
-width: 250px;
-}
-
-.events{
-    padding-top: 25px;
-}
-
-.localsnews{
-    padding-top: 23px;
-}
-
-.helpeachothers{
-    padding-top: 23px;
-}
-
-.events, .meetyourneighour, .localsnews, .helpeachothers{
-    width: 45%;
+    background: rgb(0,0,249);
+    background: radial-gradient(circle, rgba(0,0,249,1) 21%, rgba(2,0,36,1) 100%);
+    border-radius: 25px;
+    height: 100px;
+    width: 100px;
+    margin-top: 5px;
+    font-size: 13px;
+    color: white;
+    border-style: none;
+    outline-style: none;
+    padding-top: 15px;
+    margin-right: 5px;
+    }
     
-}
-
-
- .parstyle{
-     text-align: center;
- }
-
-
- /* Sustainability page style */
-
-
-
- .carpool, .reuse, .smart-consumption{
-background: rgb(29,189,39);
-background: radial-gradient(circle, rgba(29,189,39,1) 0%, rgba(8,34,11,1) 100%);
-border-radius: 25px;
-height: 100px;
-width: 100px;
-margin-top: 5px;
-font-size: 13px;
-color: white;
-border-style: none;
-outline-style: none;
-padding-top: 15px;
-margin-right: 5px;
-}
-
- .sustainabilty-wrapper{
-display:flex;
-justify-content: center;
-}
-
-.sustainabilty-container{
-display: flex;
-flex-wrap: wrap;
-align-content: center;
-height: 250px;
-width: 250px;
-}
-
-
-.smart-consumption{
-    align-self: flex-start;
-}
-    
-
-.carpool, .reuse {
-    padding-top: 23px;
-}
-
-
-
-
-/* Security page style */
-
-.neigbourhoodwatch, .incidents{
-background: rgb(246,22,22);
-background: radial-gradient(circle, rgba(246,22,22,1) 0%, rgba(34,8,8,1) 100%);
-border-radius: 25px;
-height: 100px;
-width: 100px;
-margin-top: 5px;
-font-size: 13px;
-color: white;
-border-style: none;
-outline-style: none;
-padding-top: 15px;
-margin-right: 5px;
-    
-
-}
-
-.security-wrapper{
+    .connect-wrapper{
     display:flex;
     justify-content: center;
+    }
+    
+    .connect-container {  
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 250px;
+    width: 250px;
+    }
+    
+    .events{
+        padding-top: 25px;
+    }
+    
+    .localsnews{
+        padding-top: 23px;
+    }
+    
+    .helpeachothers{
+        padding-top: 23px;
+    }
+    
+    .events, .meetyourneighour, .localsnews, .helpeachothers{
+        width: 45%;
+        
+    }
+    
+    
+     .parstyle{
+         text-align: center;
+     }
+    
+    
+     /* Sustainability page style */
+    
+    
+    
+     .carpool, .reuse, .smart-consumption{
+    background: rgb(29,189,39);
+    background: radial-gradient(circle, rgba(29,189,39,1) 0%, rgba(8,34,11,1) 100%);
+    border-radius: 25px;
+    height: 100px;
+    width: 100px;
+    margin-top: 5px;
+    font-size: 13px;
+    color: white;
+    border-style: none;
+    outline-style: none;
+    padding-top: 15px;
+    margin-right: 5px;
+    }
+    
+     .sustainabilty-wrapper{
+    display:flex;
+    justify-content: center;
+    }
+    
+    .sustainabilty-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 250px;
+    width: 250px;
+    }
+    
+    
+    .smart-consumption{
+        align-self: flex-start;
+    }
+        
+    
+    .carpool, .reuse {
+        padding-top: 23px;
+    }
+    
+    
+    
+    
+    /* Security page style */
+    
+    .neigbourhoodwatch, .incidents{
+    background: rgb(246,22,22);
+    background: radial-gradient(circle, rgba(246,22,22,1) 0%, rgba(34,8,8,1) 100%);
+    border-radius: 25px;
+    height: 100px;
+    width: 100px;
+    margin-top: 5px;
+    font-size: 13px;
+    color: white;
+    border-style: none;
+    outline-style: none;
+    padding-top: 15px;
+    margin-right: 5px;
+        
+    
+    }
+    
+    .security-wrapper{
+        display:flex;
+        justify-content: center;
+    }
+    
+    
+    .security-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 250px;
+    width: 250px;
+    }
+    
+    
+    .incidents {
+        padding-top: 25px;
+    }
+    
+
+@media screen and (max-width: 400px) {
+    .connect,
+    .emergency{
+        margin-left:15%;
+    }
 }
-
-
-.security-container{
-display: flex;
-flex-wrap: wrap;
-align-content: center;
-height: 250px;
-width: 250px;
-}
-
-
-.incidents {
-    padding-top: 25px;
-}
-
-
