@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: black;
     font-family: "Gill Sans", sans-serif;
@@ -29,4 +35,31 @@ body {
 
 .emergency{
     background-color: red;
+}
+
+.footer-container {
+    display: flex;
+    background-color: rgb(132,188,65);
+}
+
+.footer-button {
+    color: white;
+    flex: 1;
+    padding: 10px;
+}
+
+.footer-icon {
+    text-align: center;
+    font-size: 1.7em;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer-button p {
+    text-align: center;
+}
+
+.footer-button:hover {
+    cursor: pointer;
+    background-color:  rgb(102 146 68);
 }
