@@ -212,8 +212,9 @@ img {
     color: white;
     border-style: none;
     outline-style: none;
-    padding-top: 15px;
-    margin-right: 5px;
+    padding-top: 20px;
+    margin-right: 30px;
+    margin-bottom: 30px;
     }
     
      .sustainabilty-wrapper{
@@ -226,8 +227,8 @@ img {
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    height: 250px;
-    width: 250px;
+    height: 300px;
+    width: 300px;
     }
     
     
