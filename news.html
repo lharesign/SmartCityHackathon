@@ -6,8 +6,10 @@
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lobster">
     <script src="https://kit.fontawesome.com/14a6d0f73b.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="sidebar.js" defer></script>
     <script src="text-read.js"></script>
-    <title>Footer</title>
+
+    <title>Get Connected</title>
     <!--<style>
         body{
             background-color: white;
@@ -15,6 +17,22 @@
     </style>-->
 </head>
 <body>
+    <div id="mySidebar" class="sidebar closed">
+        <a href="javascript:void(0)" class="closebtn" onclick="navEvent()">&#9776;</a>
+        <a href="javascript:void(0)" class="accordion">Region</a>
+        <div class="panel">
+            <a href="javascript:void(0)">Staircase</a>
+            <a href="javascript:void(0)">Building</a>
+            <a href="javascript:void(0)">Area</a>
+        </div>
+        <a href="pm.html">Direct Messages</a>
+        <a href="support.html">Support</a>
+        <a href="logout.html">Logout</a>
+    </div>
+
+    <div id="navbar">
+            <button class="openbtn" onclick="navEvent()">&#9776;</button> 
+    </div>
     <div class="logo-header">
         <h1>Get Connected</h1>
         <p class="information-header info-style">In Get Connected we keep you updated with the latest news</p>
@@ -63,13 +81,33 @@
     </div>
     </div>
 
-   <footer id="footer">
+    <footer id="footer">
+        <div class="tcontainer"><div class="ticker-wrap"><div class="ticker-move">
+            <div class="ticker-item">Residents prefer staying home as the number of covid-19 infected rises</div>
+            <div class="ticker-item">Beautiful colors of Palsjo Park reveals itself amidst the Fall</div>
+            <div class="ticker-item">Sale going on in Helsingborg</div>
+            <div class="ticker-item">Football:Team Allerum lost to Team Mariapark</div>
+          </div></div></div>
         <div class="footer-container">
-            <a class="footer-button" href="getconnected.html"><div><div class="button-icon"><i class="fas fa-user-friends"></i></div><p>Get Connected</p></div></a>
-            <a class="footer-button" href="sustainability.html"><div class="footer-button"><div class="button-icon"><i class="fas fa-leaf"></i></div><p>Sustainability</p></div></a>
-            <a class="footer-button" href="emergency.html"><div class="footer-button"><div class="button-icon"><i class="fas fa-shield-alt"></i></div><p>Security</p></div></a>
+            <a class="footer-button" href="getconnected.html">
+                <div>
+                    <div class="button-icon"><i class="fas fa-user-friends"></i></div>
+                    <p>Get Connected</p>
+                </div>
+            </a>
+            <a class="footer-button" href="getconnected.html">
+                <div>
+                    <div class="button-icon"><i class="fas fa-leaf"></i></div>
+                    <p>Sustainability</p>
+                </div>
+            </a>
+            <a class="footer-button" href="emergency.html">
+                <div>
+                    <div class="button-icon"><i class="fas fa-shield-alt"></i></div>
+                    <p>Security</p>
+                </div>
+            </a>
         </div>
     </footer>
-
 </body>
 </html>
