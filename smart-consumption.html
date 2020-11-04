@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lobster">
     <script src="https://kit.fontawesome.com/14a6d0f73b.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="sidebar.js" defer></script>
     <script>
     jQuery(function(){
         console.log("Inside the main function");
@@ -42,6 +43,22 @@ $('a.less', minimized_elements).click(function(event){
 </script>
 </head>
 <body>
+    <div id="mySidebar" class="sidebar closed">
+        <a href="javascript:void(0)" class="closebtn" onclick="navEvent()">&#9776;</a>
+        <a href="javascript:void(0)" class="accordion">Region</a>
+        <div class="panel">
+            <a href="javascript:void(0)">Staircase</a>
+            <a href="javascript:void(0)">Building</a>
+            <a href="javascript:void(0)">Area</a>
+        </div>
+        <a href="pm.html">Direct Messages</a>
+        <a href="support.html">Support</a>
+        <a href="logout.html">Logout</a>
+    </div>
+
+    <div id="navbar">
+            <button class="openbtn" onclick="navEvent()">&#9776;</button> 
+    </div>
 	<div class="container-box">
         <div class="logo-header">
             <h1>Smart Consumption</h1>
