@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>My Website</title>
+	<title>Smart Consumption</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lobster">
     <script src="https://kit.fontawesome.com/14a6d0f73b.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="sidebar.js" defer></script>
     <script>
     jQuery(function(){
         console.log("Inside the main function");
@@ -42,6 +43,22 @@ $('a.less', minimized_elements).click(function(event){
 </script>
 </head>
 <body>
+    <div id="mySidebar" class="sidebar closed">
+        <a href="javascript:void(0)" class="closebtn" onclick="navEvent()">&#9776;</a>
+        <a href="javascript:void(0)" class="accordion">Region</a>
+        <div class="panel">
+            <a href="javascript:void(0)">Staircase</a>
+            <a href="javascript:void(0)">Building</a>
+            <a href="javascript:void(0)">Area</a>
+        </div>
+        <a href="pm.html">Direct Messages</a>
+        <a href="support.html">Support</a>
+        <a href="logout.html">Logout</a>
+    </div>
+
+    <div id="navbar">
+            <button class="openbtn" onclick="navEvent()">&#9776;</button> 
+    </div>
 	<div class="container-box">
         <div class="logo-header">
             <h1>Smart Consumption</h1>
@@ -50,11 +67,12 @@ $('a.less', minimized_elements).click(function(event){
 		<div class="container-items">
             <div class="image-container">
             <img src="images/sherlock.jpg" alt="Book">
-            <p class="minimize">I am willing to share my favourite book of Sherlock Holmes with you for a month.
-                If anyone wants to borrow, feel free to press the Borrow button.
+            <p class="minimize">Hi, This is Rama! I had been looking for a Sherlock Novel for my kid since the last few days in our library.
+                Looks like its not available for the time being.
+                If anyone is willing to lend it to me for a few weeks, please feel free to press the 'Yes' button. Thanks in advance!
                </p>
             </div>
-            <div class="product-text"><b>Are you interested to borrow?</b>
+            <div class="product-text"><b>Are you willing to lend?</b>
                 <span><div class="interest-button">Yes</div></span>
             </div>
         </div>
@@ -62,11 +80,10 @@ $('a.less', minimized_elements).click(function(event){
         <div class="container-items">
             <div class="image-container">
             <img src="images/tools.jpg" alt="Tools">
-            <p class="minimize">I am willing to share my set of toolbox with you for a month.
-                If anyone wants to borrow, feel free to press the Borrow button.
-               </p>
+            <p class="minimize">Hi, This is Sayantoni! I was looking for a toolbox for a couple of days.
+                If anyone is willing to lend it to me, please feel free to press the 'Yes' button. It would be a great help to me.               </p>
             </div>
-            <div class="product-text"><b>Are you interested to borrow?</b>
+            <div class="product-text"><b>Are you willing to lend?</b>
                 <span><div class="interest-button">Yes</div></span>
             </div>
         </div>
@@ -74,20 +91,35 @@ $('a.less', minimized_elements).click(function(event){
         <div class="container-items">
             <div class="image-container">
             <img src="images/lawn_mower.jpg" alt="Lawn mower">
-            <p class="minimize">I am willing to share my little lawn mower robot with you for a couple of weeks.
-                If anyone wants to borrow, feel free to press the Borrow button.
+            <p class="minimize">Hi, This is Jimmy! I would be needing a lawn mower for a couple of days.
+                If anyone is willing to lend it to me, please feel free to press the 'Yes' button. It would be a great help to me.
                </p>
             </div>
-            <div class="product-text"><b>Are you interested to borrow?</b>
+            <div class="product-text"><b>Are you willing to lend?</b>
                 <span><div class="interest-button">Yes</div></span>
             </div>
         </div>
     </div>
     <footer id="footer">
         <div class="footer-container">
-            <a class="footer-button" href="getconnected.html"><div><div class="button-icon"><i class="fas fa-user-friends"></i></div><p>Get Connected</p></div></a>
-            <a class="footer-button" href="sustainability.html"><div class="footer-button"><div class="button-icon"><i class="fas fa-leaf"></i></div><p>Sustainability</p></div></a>
-            <a class="footer-button" href="emergency.html"><div class="footer-button"><div class="button-icon"><i class="fas fa-shield-alt"></i></div><p>Security</p></div></a>
+            <a class="footer-button" href="getconnected.html">
+                <div>
+                    <div class="button-icon"><i class="fas fa-user-friends"></i></div>
+                    <p>Get Connected</p>
+                </div>
+            </a>
+            <a class="footer-button" href="getconnected.html">
+                <div>
+                    <div class="button-icon"><i class="fas fa-leaf"></i></div>
+                    <p>Sustainability</p>
+                </div>
+            </a>
+            <a class="footer-button" href="emergency.html">
+                <div>
+                    <div class="button-icon"><i class="fas fa-shield-alt"></i></div>
+                    <p>Security</p>
+                </div>
+            </a>
         </div>
     </footer>
 </body>
