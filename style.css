@@ -39,6 +39,21 @@ body {
     display: inline-block;
 }
 
+.helpful-button {
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.margin-name {
+    margin-top: 10px;
+}
+
 .logo-header {
     padding-top: 50px;
     padding-bottom: 50px;
