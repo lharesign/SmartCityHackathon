@@ -440,6 +440,7 @@ h1 {
 .news-content {
     color: black;
     background-color: white;
+    margin-bottom: 50px;
 }
 
 .news-paragraph {
