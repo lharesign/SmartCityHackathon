@@ -7,6 +7,8 @@
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lobster">
         <script src="https://kit.fontawesome.com/14a6d0f73b.js" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="sidebar.js" defer></script>
+        <script src="script.js" defer></script>
     </head>
     <body>
         <div class="container-box">
@@ -59,28 +61,27 @@
                 </div>
             </div>
             <div class="container-items">
-
-                <div id="plus">
+                <div id="plussign">
                     <button class="plus-container" onclick="addInputContainer()"><i class="fa fa-2x fa-plus"></i></button>
                 </div>
-                <div id="input-items" class="container-items">
-                    <div class="opt-container">
-                        <p class="chk-visible">Visibility</p>
-                        <input type="checkbox" id="visibility"  class="chk-visible" name="visibility" value="visibility">
-                        <label for="visibility">Stairs</label><br>
-                        <input type="checkbox" id="visibility"  class="chk-visible" name="visibility" value="visibility">
-                        <label for="visibility">Building</label><br>
-                        <input type="checkbox" id="visibility"  class="chk-visible" name="visibility" value="visibility">
-                        <label for="visibility">Locality</label><br>
-                    </div>
-                    <div class="product-text">
-                        <label for="event">What do I need?</label><br>
-                        <input type="text" id="head" name="head"><br>
+            </div>
+            <div id="input-items" class="container-items">
+                <div class="opt-container">
+                    <p class="chk-visible">Visibility</p>
+                    <input type="checkbox" id="visibility"  class="chk-visible" name="visibility" value="visibility">
+                    <label for="visibility">Stairs</label><br>
+                    <input type="checkbox" id="visibility"  class="chk-visible" name="visibility" value="visibility">
+                    <label for="visibility">Building</label><br>
+                    <input type="checkbox" id="visibility"  class="chk-visible" name="visibility" value="visibility">
+                    <label for="visibility">Locality</label><br>
+                </div>
+                <div class="product-text">
+                    <label for="event">What do I need?</label><br>
+                    <input type="text" id="head" name="head"><br>
 
-                        <label for="desc">Description</label><br>
-                        <textarea id="desc" name="description" rows="3"></textarea>
-                        <span><button class="btn">Post</button></span>
-                    </div>
+                    <label for="desc">Description</label><br>
+                    <textarea id="desc" name="description" rows="3"></textarea>
+                    <span><button class="btn">Post</button></span>
                 </div>
             </div>
         </div>
@@ -106,6 +107,5 @@
                 </a>
             </div>
         </footer>
-        <script src="script.js" defer></script>
     </body>
 </html>
