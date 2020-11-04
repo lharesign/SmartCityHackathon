@@ -726,7 +726,8 @@ h1 {
     display: block;
     margin: auto;
     margin-bottom: 4%;
-    max-width: 100%;
+    width: 70%;
+    max-width: 450px;
 }
 
 #qr-code-img{
