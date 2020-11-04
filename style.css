@@ -55,6 +55,7 @@ h1 {
     margin-top: 20px;
     color: rgb(116,209,76);
     font-size: 20px;
+    text-align: center;
 }
 
 .minimize {
@@ -76,6 +77,7 @@ h1 {
 }
 
 .footer-container {
+    max-height: 72px;
     display: flex;
     background-color: rgb(132, 188, 65);
 }
@@ -109,29 +111,39 @@ h1 {
     width: 100%;
 }
 
-/* StartPage */
+#footer a {
+    text-decoration: none;
+}
 
-img {
+/* StartPage */
+.image-logo {   
+    width: 400px; 
+    height: 150px;
     padding-top: 2%;
     display: block;
     margin: auto;
 }
 
-.connect, .sustainability, .emergency {
-    font-size: 20px;
-    height: 200px;
-    width: 200px;
+.connect, .sustainability, .emergency{
+    font-size: 15px;
+    height: 125px;
+    width: 125px;
     color: white;
     border: none;
     border-radius: 50%;
     cursor: pointer;
     display: block;
+    outline: none;
+}
+
+.buttons a {
+    text-decoration: none;
 }
 
 .connect {
-    background: rgb(0, 0, 249);
-    background: radial-gradient(circle, rgba(0, 0, 249, 1) 21%, rgba(2, 0, 36, 1) 100%);
-    margin-left: 33%;
+    background: rgb(0,0,249);
+    background: radial-gradient(circle, rgba(0,0,249,1) 21%, rgba(2,0,36,1) 100%);
+    margin-left: 38%;
     margin-top: 2%
 }
 
@@ -141,14 +153,14 @@ img {
     margin-left: 50%;
 }
 
-.emergency {
-    background: rgb(246, 22, 22);
-    background: radial-gradient(circle, rgba(246, 22, 22, 1) 0%, rgba(34, 8, 8, 1) 100%);
-    margin-left: 33%;
+.emergency{
+    background: rgb(246,22,22);
+    background: radial-gradient(circle, rgba(246,22,22,1) 0%, rgba(34,8,8,1) 100%);
+    margin-left: 38%;
 }
 /* Connect page style */
 
-.events, .meetyourneighour, .localsnews, .helpeachothers{
+.events, .localsnews, .helpeachothers{
     background: rgb(0,0,249);
     background: radial-gradient(circle, rgba(0,0,249,1) 21%, rgba(2,0,36,1) 100%);
     border-radius: 25px;
@@ -159,8 +171,7 @@ img {
     color: white;
     border-style: none;
     outline-style: none;
-    padding-top: 15px;
-    margin-right: 5px;
+    margin: 20px;
     }
     
     .connect-wrapper{
@@ -169,11 +180,12 @@ img {
     }
     
     .connect-container {  
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    height: 250px;
-    width: 250px;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        height: 300px;
+        width: 300px;
     }
     
     .events{
@@ -188,10 +200,7 @@ img {
         padding-top: 23px;
     }
     
-    .events, .meetyourneighour, .localsnews, .helpeachothers{
-        width: 45%;
-        
-    }
+   
     
     
      .parstyle{
@@ -214,13 +223,15 @@ img {
     color: white;
     border-style: none;
     outline-style: none;
-    padding-top: 15px;
-    margin-right: 5px;
+    margin: 20px;
     }
+
+   
     
      .sustainabilty-wrapper{
     display:flex;
     justify-content: center;
+    margin: auto;
     }
     
     .sustainabilty-container{
@@ -228,8 +239,8 @@ img {
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    height: 250px;
-    width: 250px;
+    height: 300px;
+    width: 300px;
     }
     
     
@@ -238,7 +249,7 @@ img {
     }
         
     
-    .carpool, .reuse {
+    .carpool, .reuse{
         padding-top: 23px;
     }
     
@@ -247,7 +258,7 @@ img {
     
     /* Security page style */
     
-    .neigbourhoodwatch, .incidents{
+    .neigbourhoodwatch, .incidents, .weather-alerts{
     background: rgb(246,22,22);
     background: radial-gradient(circle, rgba(246,22,22,1) 0%, rgba(34,8,8,1) 100%);
     border-radius: 25px;
@@ -258,10 +269,7 @@ img {
     color: white;
     border-style: none;
     outline-style: none;
-    padding-top: 15px;
-    margin-right: 5px;
-        
-    
+    margin: 20px;
     }
     
     .security-wrapper{
@@ -274,15 +282,27 @@ img {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-    height: 250px;
-    width: 250px;
+    height: 300px;
+    width: 300px;
+    justify-content: center;
     }
     
     
     .incidents {
         padding-top: 25px;
     }
+
+    .weather-alerts {
+        padding-top: 25px;
+    }
     
+    .smart-consumption {
+        padding-top: 15px;
+    }
+
+    .neigbourhoodwatch {
+        padding-top: 15px;
+    }
 
 @media screen and (max-width: 400px) {
     .connect, .emergency {
@@ -371,6 +391,7 @@ img {
     transition: margin-left .5s;
     /* If you want a transition effect */
     padding: 8px;
+    width: 100%;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -558,4 +579,196 @@ a:visited {
     position:absolute;
     bottom: 60px;
     right: 55px;
+}
+
+.inner-wrap {
+    display:flex;
+    width: 75%;
+    margin: auto;
+    border: 2px solid rgba(29,189,39,1);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom: none;
+
+
+}
+
+.chat-nav {
+    flex:2;
+    padding:12px 22px;
+    overflow-y: auto;
+    padding-right: 30px;
+    height: 40vh;
+    color: rgba(29,189,39,1);
+}
+
+.chat-box {
+    padding:10px 15px;
+    flex:5;
+    margin-left: 20px;
+    border-left: 2px solid rgba(29,189,39,1);
+    overflow-y: auto;
+    height: 40vh;
+    color: rgba(29,189,39,1);
+
+}
+
+.pers-chat {
+    line-height:23px;
+}
+
+.bottom-wrap {
+    display:flex;
+    width: 75%;
+    margin: auto;
+    border: 2px solid rgba(29,189,39,1);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.opts {
+    flex:2;
+    padding:12px 22px;
+    overflow-y: auto;
+    padding-right: 30px;
+    height: 10vh;
+    color: rgba(29,189,39,1);
+    position: relative;
+}
+
+.type-box{
+    overflow-y: auto;
+    overflow: hidden;
+    border:none;
+    height: 10vh;
+    outline: none;
+    resize: none;
+    background-color: rgb(39, 39, 39);
+    display: block;
+    width: 90%;
+    color: rgba(29,189,39,1);
+    cursor: pointer;
+
+
+
+}
+
+.type-box-cont{
+    flex:5;
+    padding:10px 15px;
+    margin-left: 20px;
+    border-left: 2px solid rgba(29,189,39,1);
+    position: relative;
+    color: rgba(29,189,39,1);
+}
+
+#plane {
+    position:absolute;
+    top: 15px;
+    right: 15px;
+    color: rgba(29,189,39,1);
+    cursor: pointer;
+}
+
+#plus {
+    position:absolute;
+    top: 15px;
+    right: 5px;
+    color: rgba(29,189,39,1);
+    cursor: pointer;
+}
+
+#cogs {
+    position:absolute;
+    top: 15px;
+    left: 15px;
+    color: rgba(29,189,39,1);
+    cursor: pointer;
+}
+
+.pers-chat:hover{
+    background-color: rgb(49, 49, 49);
+    cursor: pointer;
+}
+
+/* Sign out */
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 60px;
+    height: 60px    ;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .loader-container{
+      height: 300px;
+      width: 300px;
+    display:flex;
+    flex-direction: column;
+    border:solid white;
+      
+  }
+  .loader-container p{
+      text-align: center;
+      color: white;
+      margin-bottom: 30px;
+  }
+
+  .loader{
+      align-self: center;
+    
+  }
+
+  .loader-wrapper{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%; 
+      height: 800px;
+     }
+
+
+#bankid-body{
+    background-color: none !important;
+}
+
+#bankid-img {    
+    padding-top: 5%;
+    display: block;
+    margin: auto;
+    margin-bottom: 4%;
+    max-width: 100%;
+}
+
+#qr-code-img{
+    max-width: 50px;
+    display: block;
+    margin: auto;
+}
+
+#qr-code {
+color: rgb(0, 110, 129);
+}
+.bank-id {
+    text-align: center;
+
+}
+
+.bank-id-p {
+    text-align: center;
+    margin-bottom: 5%;
 }
