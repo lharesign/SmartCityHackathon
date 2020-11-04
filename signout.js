@@ -1,3 +1,3 @@
 setTimeout(function(){
-    window.location.href = 'bankid.html';
- }, 5000);
+    window.location.href = 'index.html';
+ }, 3000);
