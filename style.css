@@ -40,7 +40,6 @@ body {
 }
 
 .logo-header {
-    padding-top: 50px;
     padding-bottom: 50px;
 }
 
@@ -689,3 +688,14 @@ a:visited {
     background-color: rgb(49, 49, 49);
     cursor: pointer;
 }
+
+.padding-container {
+    padding: 20px;
+    max-width: 600px;
+    border-radius: 5px;
+}
+
+.record-title {
+    color: red;
+}
+
