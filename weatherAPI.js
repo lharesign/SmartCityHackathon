@@ -4,6 +4,8 @@
 
 //Getting element root from HTML file
 const app = document.getElementById('root');
+var lat, long, index=0;
+var map, mapId="";
 
 //Creating and apending a div element with class container to the root element
 const container = document.createElement('div');
@@ -11,10 +13,23 @@ container.setAttribute('class', 'container');
 app.appendChild(container);
 
 var coords;
+function initMap() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+        (position) => {
+            lat = position.coords.latitude;
+            long = position.coords.longitude;
+            showMapLoc();
+        });
+    } else {
+        // Browser doesn't support Geolocation
+        handleLocationError(false, infoWindow, map.getCenter());
+    }
+}
 
 function showMapLoc() {
-    map = new google.maps.Map(document.getElementById("map_canvas"), {
-        zoom: 15,
+    map = new google.maps.Map(document.getElementById(mapId), {
+        zoom: 6,
         center: new google.maps.LatLng(lat, long),
         mapTypeId: google.maps.MapTypeId.ROADMAP
     });
@@ -34,7 +49,7 @@ request.onload = function () {
     //Checking if request goes through successfully and running function if it does
     if (request.status >= 200 && request.status < 400) {
         //Looping through records which are stored in an array within data variable
-        data.alert.forEach(record => {
+        data.alert.forEach((record,index) => {
 
             //Creating a record-container element and assigning class to it
             const recordContainer = document.createElement('div');
@@ -79,15 +94,20 @@ request.onload = function () {
             recordContainer.appendChild(headlineParagraph);
             recordContainer.appendChild(infoParagraph);
 
-            const mapDiv = document.createElement('div');
-            mapDiv.setAttribute('class', 'map_container');
-            mapDiv.setAttribute('id', 'map_canvas');
-            recordContainer.appendChild(mapDiv);
+            
 
 
 
             coords = record.info.area.polygon;
+            if(coords != null) {
+            const mapDiv = document.createElement('div');
+            mapDiv.setAttribute('class', 'map_container');
+            mapId = 'map_canvas'+index;
+            mapDiv.setAttribute('id', mapId);
+            recordContainer.appendChild(mapDiv);
             drawShape(coords);
+            }
+            
         });
     }
     else {
@@ -97,7 +117,7 @@ request.onload = function () {
 }
 
 
-}
+
 
 // Error handling for geolocation call
 function handleLocationError(browserHasGeolocation, infoWindow, pos) {
@@ -116,14 +136,18 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
 // function to position the map and mark the area in the map
 // by drawing the polygin with the given coordinates
 function drawShape(shapeCoords) {
-    showMapLoc();
-
+    if (shapeCoords != null) {
     var polygonCoords = [];
     var splitCoords = shapeCoords.split(" ");
+
     for (var i = 0; i < splitCoords.length; i++) {
-        var pt = { lat: splitCoords[0], lng: splitCoords[1] };
+        var pt = { lat: parseFloat(splitCoords[i].split(",")[0]), lng: parseFloat(splitCoords[i].split(",")[1]) };
         polygonCoords.push(pt);
     }
+    lat = parseFloat(splitCoords[0].split(",")[0]);
+    long =parseFloat(splitCoords[0].split(",")[1]);
+
+    showMapLoc();
 
     // Construct the polygon.
     const shape = new google.maps.Polygon({
@@ -135,6 +159,7 @@ function drawShape(shapeCoords) {
         fillOpacity: 0.35
     });
     shape.setMap(map);
+    }
 }
 
 
