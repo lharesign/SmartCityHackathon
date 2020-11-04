@@ -1,3 +1,7 @@
+//PULLS DATA CORRECTLY FROM THE API BUT NEEDS TO BE MADE SO THAT IT 
+//ADDS THE COORDS (WHICH ARE BEING SPLIT INTO COORDINATE PAIRS BY TWO FOR LOOPS) TO THE MAP
+
+
 //Getting element root from HTML file
 const app = document.getElementById('root');
 
@@ -74,7 +78,7 @@ request.onload = function () {
             recordContainer.appendChild(severityParagraph);
             recordContainer.appendChild(headlineParagraph);
             recordContainer.appendChild(infoParagraph);
-            
+
             const mapDiv = document.createElement('div');
             mapDiv.setAttribute('class', 'map_container');
             mapDiv.setAttribute('id', 'map_canvas');
@@ -113,7 +117,7 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
 // by drawing the polygin with the given coordinates
 function drawShape(shapeCoords) {
     showMapLoc();
- 
+
     var polygonCoords = [];
     var splitCoords = shapeCoords.split(" ");
     for (var i = 0; i < splitCoords.length; i++) {

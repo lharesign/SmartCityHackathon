@@ -3,19 +3,60 @@
     <head>
 	<title>My Website</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/14a6d0f73b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lobster">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="sidebar.js" defer></script>
 </head>
 <body>
+    <div id="mySidebar" class="sidebar closed">
+        <a href="javascript:void(0)" class="closebtn" onclick="navEvent()">&#9776;</a>
+        <a href="javascript:void(0)" class="accordion">Region</a>
+        <div class="panel">
+            <a href="javascript:void(0)">Staircase</a>
+            <a href="javascript:void(0)">Building</a>
+            <a href="javascript:void(0)">Area</a>
+        </div>
+        <a href="pm.html">Direct Messages</a>
+        <a href="support.html">Support</a>
+        <a href="logout.html">Logout</a>
+    </div>
+
+    <div id="navbar">
+            <button class="openbtn" onclick="navEvent()">&#9776;</button> 
+    </div>
     <div class="logo-header">
         <h1>Get Connected</h1>
     </div>
     <div class="connect-wrapper">
 	<div class="connect-container">
-        <div class="events"><div class="button-icon"><i class="far fa-calendar-alt"></i></div><p class="parstyle">Events</p></div>
-        <div class="localsnews"><div class="button-icon"><i class="fas fa-newspaper"></i></div><p class="parstyle">Local news</p></div>
-        <div class="helpeachothers"><div class="button-icon"><i class="fas fa-hands-helping"></i></div><p class="parstyle">Help each other</p></div>
+        <div class="events"><div class="button-icon"><i class="far fa-calendar-alt"></i></div><p class="parstyle">Events</p></div></a>
+        <a href="news.html"><div class="localsnews"><div class="button-icon"><i class="fas fa-newspaper"></i></div><p class="parstyle">Local news</p></div>
+        <a href=""><div class="helpeachothers"><div class="button-icon"><i class="fas fa-hands-helping"></i></div><p class="parstyle">Help each other</p></div></a>
     </div>
 </div>
     <script src="https://kit.fontawesome.com/14a6d0f73b.js" crossorigin="anonymous"></script>
 </body>
+<footer id="footer">
+    <div class="footer-container">
+        <a class="footer-button" href="getconnected.html">
+            <div>
+                <div class="button-icon"><i class="fas fa-user-friends"></i></div>
+                <p>Get Connected</p>
+            </div>
+        </a>
+        <a class="footer-button" href="getconnected.html">
+            <div>
+                <div class="button-icon"><i class="fas fa-leaf"></i></div>
+                <p>Sustainability</p>
+            </div>
+        </a>
+        <a class="footer-button" href="emergency.html">
+            <div>
+                <div class="button-icon"><i class="fas fa-shield-alt"></i></div>
+                <p>Security</p>
+            </div>
+        </a>
+    </div>
+</footer>
 </html>
