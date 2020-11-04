@@ -1,12 +1,63 @@
+
 * {
-    box-sizing: border-box;
+    box-sizing : border-box;
     margin: 0px;
     padding: 0px;
 }
-
 body {
-    background-color: rgb(39, 39, 39);
-    font-family: "Gill Sans", sans-serif;
+    background-color: black;
+}
+.opt-container {
+    width: 18%;
+    font-size: small;
+    align-self: center;
+    margin-left: 5px;    
+}
+.opt-container a:visited {
+    color: black;
+}
+#input-items {
+    display: none;
+    background-color: lightgray;
+}
+.plus-container {
+    height: 15;
+    float: right;
+}
+
+.chk-visible {
+    line-height: 1.5;
+}
+.interested, #interest{
+    font-size: medium;
+    color: darkblue;
+    float: right;
+    margin: 5px;
+}
+
+#desc {
+    width: 250px;
+    overflow: auto;
+    border-radius: 10px;    
+    resize:none;
+}
+#head {
+    width: 250px;
+    border-radius: 6px;
+}
+.btn {
+    margin-left: 20px;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    width: 50px;
+    border-radius: 10px;
+    height: 20px;
+    display: inline-block;
+}
+
+.text-div {
+    position:relative;
 }
 
 .container-box {
@@ -25,13 +76,13 @@ body {
     border: 1px solid black;
     background-color: white;
     color: black;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .interest-button {
     padding: 10px;
     text-align: center;
-    cursor: pointer;
+    cursor:pointer;
     background-color: red;
     color: white;
     font-weight: bold;
@@ -55,6 +106,7 @@ h1 {
     margin-top: 20px;
     color: rgb(116,209,76);
     font-size: 20px;
+    text-align: center;
 }
 
 .minimize {
@@ -68,7 +120,7 @@ h1 {
     border-top: 0;
 }
 
-.image-container {
+.image-container{
     padding: 20px;
     border: 1px solid black;
     width: 440px;
@@ -77,7 +129,7 @@ h1 {
 
 .footer-container {
     display: flex;
-    background-color: rgb(132, 188, 65);
+    background-color: rgb(132,188,65);
 }
 
 .footer-button {
@@ -99,7 +151,7 @@ h1 {
 
 .footer-button:hover {
     cursor: pointer;
-    background-color: rgb(102 146 68);
+    background-color:  rgb(102 146 68);
 }
 
 #footer {
@@ -108,16 +160,14 @@ h1 {
     left: 0px;
     width: 100%;
 }
-
 /* StartPage */
-
-img {
+imgs {    
     padding-top: 2%;
     display: block;
     margin: auto;
 }
 
-.connect, .sustainability, .emergency {
+.connect, .sustainability, .emergency{
     font-size: 20px;
     height: 200px;
     width: 200px;
@@ -129,21 +179,21 @@ img {
 }
 
 .connect {
-    background: rgb(0, 0, 249);
-    background: radial-gradient(circle, rgba(0, 0, 249, 1) 21%, rgba(2, 0, 36, 1) 100%);
+    background: rgb(0,0,249);
+    background: radial-gradient(circle, rgba(0,0,249,1) 21%, rgba(2,0,36,1) 100%);
     margin-left: 33%;
     margin-top: 2%
 }
 
-.sustainability {
-    background: rgb(29, 189, 39);
-    background: radial-gradient(circle, rgba(29, 189, 39, 1) 0%, rgba(8, 34, 11, 1) 100%);
+.sustainability{
+    background: rgb(29,189,39);
+    background: radial-gradient(circle, rgba(29,189,39,1) 0%, rgba(8,34,11,1) 100%);
     margin-left: 50%;
 }
 
-.emergency {
-    background: rgb(246, 22, 22);
-    background: radial-gradient(circle, rgba(246, 22, 22, 1) 0%, rgba(34, 8, 8, 1) 100%);
+.emergency{
+    background: rgb(246,22,22);
+    background: radial-gradient(circle, rgba(246,22,22,1) 0%, rgba(34,8,8,1) 100%);
     margin-left: 33%;
 }
 /* Connect page style */
@@ -285,135 +335,10 @@ img {
     
 
 @media screen and (max-width: 400px) {
-    .connect, .emergency {
-        margin-left: 15%;
+    .connect,
+    .emergency{
+        margin-left:15%;
     }
-    .startpage-img {
-        width: 80%;
-    }
-}
-
-.startpage-img {
-    position: absolute;
-    top: 50%;
-    left: 17%;
-    width: 70%;
-    margin-top: -150px;
-}
-
-.hidden {
-    display: none;
-}
-
-/* The sidebar menu */
-
-.sidebar {
-    height: 100%;
-    /* 100% Full-height */
-    width: 0;
-    /* 0 width - change this with JavaScript */
-    position: fixed;
-    /* Stay in place */
-    z-index: 1;
-    /* Stay on top */
-    top: 0;
-    left: 0;
-    background-color: #111;
-    /* Black*/
-    overflow-x: hidden;
-    /* Disable horizontal scroll */
-    padding-top: 60px;
-    /* Place content 60px from the top */
-    transition: 0.5s;
-    /* 0.5 second transition effect to slide in the sidebar */
-}
-
-/* The sidebar links */
-
-.sidebar a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: white;
-    display: block;
-    transition: 0.3s;
-}
-
-/* When you mouse over the navigation links, change their color */
-
-.sidebar a:hover, .accordion:hover, .openbtn:hover {
-    color: rgb(29, 189, 39);
-}
-
-/* Position and style the close button (top right corner) */
-
-.sidebar .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-/* The button used to open the sidebar */
-
-.openbtn {
-    font-size: 36px;
-    cursor: pointer;
-    color: white;
-    border: none;
-    background-color: rgb(39, 39, 39);
-}
-
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-
-#navbar {
-    transition: margin-left .5s;
-    /* If you want a transition effect */
-    padding: 8px;
-}
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-
-@media screen and (max-height: 450px) {
-    .sidebar {
-        padding-top: 15px;
-    }
-    .sidebar a {
-        font-size: 18px;
-    }
-}
-
-.accordion {
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-}
-
-/* Style the accordion panel. Note: hidden by default */
-
-.panel {
-    padding: 0 18px;
-    display: none;
-    overflow: hidden;
-}
-
-.accordion:after {
-    content: '\02795';
-    /* Unicode character for "plus" sign (+) */
-    font-size: 13px;
-    color: #777;
-    float: right;
-    margin-left: 5px;
-}
-
-.active:after {
-    content: "\2796";
-    /* Unicode character for "minus" sign (-) */
 }
 
 .news-content {
@@ -429,7 +354,7 @@ img {
 
 .news-header {
     background-color: rgb(190, 40, 25);
-    margin-bottom: 5px;
+    margin-bottom: 20px;
     color: white;
     text-align: left;
     padding: 7px;
@@ -447,115 +372,3 @@ img {
     text-align: center;
 }
 
-.menu-container {
-    max-width: 480px;
-    margin: auto;
-    background-color: #555;
-    height: 600px;
-    color: white;
-    border-radius: 10px;
-}
-
-.list-connections {
-    border: 1px solid #ddd;
-    flex-wrap: wrap;
-    padding: 5px;
-    margin: 5px;
-    position: relative;
-    width: 95%;
-    height: auto;
-    display: flex;
-}
-.connections {
-    border: 1px solid #ddd;
-    flex-wrap: wrap;
-    padding: 5px;
-    margin: 5px;
-    position: relative;
-    width: 95%;
-    height: 160px;
-    display: flex;
-}
-.img-container {
-    position: absolute;
-    display: inline-block;
-    top: 25%;
-    width: 30%;
-    height: 50%;
-}
-.txt-container {
-    flex-wrap: wrap;
-    font-size: smaller;
-    position: absolute;
-    display: inline-block;
-    width: 75%;
-    height: 95%;
-    left: 90px;
-    overflow: auto;
-    padding: 5px;
-}
-.msg-container {
-    position: absolute;
-    display: inline;
-    right: 5%;
-    top: 5%;
-    width: 40px;
-    height: 30px;
-    text-align: center;
-}
-a:visited {
-    color: black;
-}
-.reduced-height {
-    height: 50px;
-    border: none;
-}
-#input-items {
-    display: none;
-    background-color: #555;
-}
-.opt-container {
-    position: absolute;
-    display: inline-block;
-    font-size: small;
-    top: 10%;
-    width: 30%;
-    height: 80%;
-    align-content: center;
-}
-.interested {
-    font-size: medium;
-    color: darkblue;
-    text-shadow: 1px 1px darkblue;
-}
-.add-padding{
-    padding: 20px;
-}
-#desc {
-    width: 250px;
-    overflow: auto;
-    border-radius: 10px;    
-}
-#head {
-    width: 250px;
-    border-radius: 6px;
-}
-.btn {
-    margin-left: 20px;
-    background-color: black;
-    border: 1px solid black;
-    color: white;
-    width: 50px;
-    border-radius: 10px;
-    height: 20px;
-}
-
-.text-div {
-    position:relative;
-}
-
-.spanspan {
-    position:absolute;
-    bottom: 60px;
-    right: 55px;
-}
