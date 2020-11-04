@@ -103,6 +103,11 @@ h1 {
     padding: 10px;
 }
 
+.footer-button a:visited, .sidebar a:visited {
+    color: white;
+}
+
+
 .button-icon {
     text-align: center;
     font-size: 1.7em;
@@ -126,7 +131,7 @@ h1 {
     width: 100%;
 }
 
-#footer a {
+#footer a, .no-underline {
     text-decoration: none;
 }
 
@@ -800,3 +805,11 @@ color: rgb(0, 110, 129);
     border-radius: 20px;       /* roundness of the scroll thumb */
     border: 3px solid rgb(110, 110, 110);  /* creates padding around scroll thumb */
   }
+
+  .startscreen-nav-btn {
+      position: absolute;
+      left: 8px;
+      top: 8px;
+  }
+
+  
